@@ -26,8 +26,8 @@ h1, h2, h3 {
 }
 
 h1 {
-        font-size: 500%;
-        letter-spacing: -3px;
+    font-size: 500%;
+    letter-spacing: -3px;
     }
 
 // Main page title
@@ -57,10 +57,20 @@ h1 {
     }
 }
 
+.navbar-default .navbar-toggle {
+    border: 1.5px solid white;
+    &:hover, &:focus {
+        background-color: #92da69;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
 // Navbar background colours
 .navbar, .home-callout {
-background: #8fe261;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #56ab2f, #86d659);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #56ab2f, #86d659); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #8fe261;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56ab2f, #86d659);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56ab2f, #86d659); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
