@@ -49,8 +49,8 @@ gem 'paperclip', '4.3.6'
 
 
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'pg', '0.18.4'
+  # Use sqlite3 as the database for Active Record; remove when prod.
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

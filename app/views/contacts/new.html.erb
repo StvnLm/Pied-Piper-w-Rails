@@ -3,7 +3,7 @@
         <h3 class="text-center">Contact Us</h3>
         <div class="col-md-4 col-md-offset-4">
             <div class="well">
-                <%= form_for @contact do |f|%>
+                <%= form_for @contact do |f| %>
                 <div class="form-group">
                     <%= f.label :name %>
                     <%= f.text_field :name, class: "form-control" %>
@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <%= f.label :message %>
-                    <%= f.text_field :message, class: "form-control" %>
+                    <%= f.text_area :message, rows: 5, class: "form-control" %>
                 </div>
                 <div class="row">
                     <div class="col-md-1 col-sm-offset-4">
