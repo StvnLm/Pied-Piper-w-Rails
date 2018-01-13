@@ -49,7 +49,7 @@ gem 'paperclip', '4.3.6'
 
 gem 'pg', '0.18.4'
 
-gem 'sqlite3'
+gem 'sqlite3', '1.3.13'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
