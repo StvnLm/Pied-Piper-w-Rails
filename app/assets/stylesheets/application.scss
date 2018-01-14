@@ -19,11 +19,26 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+#navbarbtn {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 3px;
+    &:active {
+        box-shadow: none;
+    }
+    &:hover, &:focus {
+    background-color: #92da69;
+    }
+}
+
 body {
     background-color: #093a39;
 }
 
-h1, h2, h3, h4, h5, h6, label {
+h1, h2, h3, h4, h5, h6, label, li {
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
