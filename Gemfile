@@ -47,6 +47,9 @@ gem 'figaro', '1.1.1'
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
 
+# Use Devise for user authentication
+gem 'devise', '4.2.0'
+
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record; remove when prod.
