@@ -20,12 +20,11 @@
 @import 'font-awesome';
 
 body {
-    
-    background-color: beige;
-    
+    background-color: #093a39;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6, label {
+    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -80,6 +79,6 @@ h1 {
 }
 
 .well{
-background: rgba(255,255,255,.3);
+background: rgba(255,255,255,.025);
 }
 
