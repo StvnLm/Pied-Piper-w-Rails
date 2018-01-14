@@ -5,6 +5,6 @@ class ContactMailer < ActionMailer::Base
        @name = name
        @email = email
        @body = body
-       mail(from: email, subject: 'Contact form message')
+       mail(from: email, subject: 'Pied Piper contact form message')
     end
 end
