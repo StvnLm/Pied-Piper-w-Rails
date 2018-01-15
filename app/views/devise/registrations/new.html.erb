@@ -6,9 +6,11 @@
       <div class="well">
         <h2>Sign up</h2>
         <!--Move this out of the well after-->
-
-
-          
+          <% if params[:plan] == '2' %>
+            <h2>Pro Account Sign Up Form</h2>
+          <% else %>
+            <h2>Basic Account Signup Form</h2>
+          <% end %>
           <div class="field form-group">
             <%= f.label :email %><br />
             <%= f.email_field :email, autofocus: true, class: 'form-control' %>

@@ -19,23 +19,37 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-#navbarbtn {
+
+.fade-in {
+  -webkit-transition:opacity .4s ease-out;
+  -moz-transition:opacity .4s ease-out;
+  -ms-transition:opacity .4s ease-out;
+  transition:opacity .4s ease-out;
+  opacity:0.7;
+}
+
+.fade-in:hover {
+  opacity: 1;
+}
+
+.navbarbtntweak {
     color: #fff;
     background-color: transparent;
     border-color: #fff;
     padding: 4px 10px;
     margin-top: 10px;
     margin-left: 3px;
-    &:active {
-        box-shadow: none;
-    }
-    &:hover, &:focus {
-    background-color: #92da69;
+    &:active, &:hover, &:focus, &:active:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    box-shadow: none;
     }
 }
 
 body {
-    background-color: beige;
+
+    background-color: FloralWhite;
 }
 
 h1, h2, h3, h4, h5, h6, label, li {
@@ -68,9 +82,12 @@ h1 {
 .navbar-default .navbar-brand , .navbar-default .navbar-nav > li > a{
     font-family: 'Open Sans', sans-serif;
     color: white;
-    &:hover {
+    opacity: .8;
+    transition:opacity .25s ease-out;
+    &:hover, &:active, &:focus {
         color: white;
-        opacity: 0.75;
+        opacity: 1;
+        transition:opacity .4s ease-out;
     }
 }
 
@@ -93,7 +110,7 @@ h1 {
 }
 
 .well{
-background: rgba(255,255,255,.025);
+background: rgba(0,0,0,.025);
 }
 
 .alert-notice {

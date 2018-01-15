@@ -4,18 +4,16 @@
             <div class="well">
                 <h2 class="text-center">Basic Membership</h2>
                 <br/>
-                <h4>Sign up for free and get basic access.</h4>
-                <br/>
-                <%= link_to "Sign up basic", "#", class: "btn btn-primary btn-block" %>
+                <%= link_to "Who doesn't love free stuff?", 
+                new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-block" %>
             </div>
         </div>
         <div class="col-md-6">
             <div class="well">
             <h2 class="text-center">Pro Membership</h2>
             <br/>
-            <h4>Sign up for the pro account for $5 a month, and get access 
-            to exclusive content</h4>
-            <%= link_to "Sign up pro", "#", class: "btn btn-danger btn-block" %>
+            <%= link_to "Lets burn a hole in that pocket of yours.", 
+            new_user_registration_path(plan: @pro_plan.id), class: "btn btn-danger btn-block" %>
         </div>
         </div>
     </div>

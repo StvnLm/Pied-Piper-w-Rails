@@ -9,6 +9,7 @@
   </head>
 
 <body>
+  
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class='container'>
       <div class="navbar-header">
@@ -28,17 +29,17 @@
         <ul class="nav navbar-nav navbar-right">
           <% if user_signed_in? %>
             <%= link_to "Logout", destroy_user_session_path, method: :delete,
-            class: "btn btn-default navbar-btn", id: "navbarbtn" %>
+            class: "btn btn-default navbar-btn fade-in navbarbtntweak" %>
           <% else %>
-            <%= link_to "Sign Up", new_user_registration_path, 
-            class: "btn btn-default navbar-btn", id: "navbarbtn" %>
+            <%= link_to "Sign Up", plans_path, 
+            class: "btn btn-default navbar-btn fade-in navbarbtntweak" %>
             <%= link_to "Login", new_user_session_path, 
-            class: "btn btn-default navbar-btn", id: "navbarbtn" %>
+            class: "btn btn-default navbar-btn fade-in navbarbtntweak" %>
           <% end %>
-          <li><%=link_to "About", about_path %></li>
-          <li><%=link_to "Contact Us", new_contact_path %></li>
+          <li><%=link_to "About", about_path, class: "fade-in" %></li>
+          <li><%=link_to "Contact Us", new_contact_path, class: "fade-in" %></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
+      </div>
     </div>
   </nav>
     
@@ -46,8 +47,8 @@
   <% flash.each do |type, msg| %>
       <%= content_tag :div, msg, class: "alert alert-#{type}" %>
   <% end %>
-  </div>
 
+  </div>
   <%= yield %>
 
 </body>
