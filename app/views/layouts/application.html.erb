@@ -45,9 +45,8 @@
     
   <div class="container text-center">
   <% flash.each do |type, msg| %>
-      <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+    <%= content_tag :div, msg, class: "alert alert-#{type} alert-dismissable" %>
   <% end %>
-
   </div>
   <%= yield %>
 

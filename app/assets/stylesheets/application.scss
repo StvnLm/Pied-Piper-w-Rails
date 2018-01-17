@@ -19,6 +19,20 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
+// .bgwallpaper {
+//     position: relative;
+// }
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+}
 
 .fade-in {
   -webkit-transition:opacity .4s ease-out;
@@ -48,7 +62,6 @@
 }
 
 body {
-
     background-color: FloralWhite;
 }
 
@@ -56,18 +69,7 @@ h1, h2, h3, h4, h5, h6, label, li {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-size: 500%;
-    letter-spacing: -3px;
-    }
-
 // Main page title
-.home-callout {
-    color: white;
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
 
 .navbar {
     border: none;
@@ -103,10 +105,10 @@ h1 {
 }
 
 // Navbar background colours
-.navbar, .home-callout {
-    background: #8fe261;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #56ab2f, #86d659);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #56ab2f, #86d659); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar {
+    background: #144017;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3DBF45, #3DBF45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3DBF45, #3DBF45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .well{
