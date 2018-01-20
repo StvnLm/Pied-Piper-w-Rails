@@ -23,6 +23,18 @@
 //     position: relative;
 // }
 
+.flash-container {
+//   position: absolute;
+  width: 100%;
+}
+
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+  margin-top: -14px;
+}
+
 .overlay {
     z-index: 1;
     height: 100%;
@@ -44,21 +56,6 @@
 
 .fade-in:hover {
   opacity: 1;
-}
-
-.navbarbtntweak {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
-    padding: 4px 10px;
-    margin-top: 10px;
-    margin-left: 3px;
-    &:active, &:hover, &:focus, &:active:focus {
-    color: #fff;
-    background-color: transparent;
-    border-color: #fff;
-    box-shadow: none;
-    }
 }
 
 body {
@@ -104,19 +101,29 @@ h1, h2, h3, h4, h5, h6, label, li {
     background-color: white;
 }
 
-// Navbar background colours
 .navbar {
     background: #144017;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3DBF45, #3DBF45);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3DBF45, #3DBF45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+// Button tweaks on navbar
+.navbarbtntweak {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    padding: 4px 10px;
+    margin-top: 10px;
+    margin-left: 3px;
+    &:active, &:hover, &:focus, &:active:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    box-shadow: none;
+    }
+}
 
 .well{
 background: rgba(0,0,0,.025);
-}
-
-.alert-notice {
-    display: none;
 }
 
 //Plans page
