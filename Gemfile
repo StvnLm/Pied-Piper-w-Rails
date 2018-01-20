@@ -47,9 +47,6 @@ gem 'figaro', '1.1.1'
 # Use Paperclip for image upload
 gem 'paperclip', '4.3.6'
 
-# Use Devise for user authentication
-gem 'devise', '4.2.0'
-
 # Use Stripe for ecommerce
 gem 'stripe', '1.48.0'
 
@@ -58,7 +55,7 @@ gem 'figaro', '1.1.1'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record; remove when prod.
-  gem 'pg', '0.18.4'
+  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -79,4 +76,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
 ruby '2.3.0'
