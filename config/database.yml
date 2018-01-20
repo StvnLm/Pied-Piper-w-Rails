@@ -5,7 +5,8 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+# Adapter MUST be postgresql for Herok. sqlite3 for aws cloud9 IDE
+  adapter: postgresql
   pool: 5
   timeout: 5000
 
