@@ -29,8 +29,9 @@ ul {
 }
 
 .flash-container {
-//   position: absolute;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .alert-notice, .alert-alert {
@@ -130,6 +131,11 @@ h1, h2, h3, h4, h5, h6, label, li {
 .well{
 background: rgba(0,0,0,.025);
 }
+
+.home-bg-overflow {
+    overflow: hidden;
+}
+
 
 //Plans page
 
